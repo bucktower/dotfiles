@@ -1,0 +1,3 @@
+[submodule "styleguides/powershell"]
+	path = styleguides/powershell
+	url = https://github.com/PoshCode/PowerShellPracticeAndStyle.git
