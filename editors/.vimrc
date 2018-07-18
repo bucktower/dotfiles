@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set encoding=utf-8
 
 " note: you must have installed Vundle beforehand:
 " https://github.com/VundleVim/Vundle.vim#quick-start
@@ -15,9 +16,14 @@ call vundle#begin('$HOME/.vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 
 " vim Plugins
-Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-surround'
+Plugin 'w0rp/ale'
+Plugin 'valloric/youcompleteme'
+
+" Language-specific
+" Syntax Highlighting
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
@@ -72,5 +78,4 @@ let g:javascript_plugin_jsdoc = 1 " Enable syntax highlighting for JSDoc
 " Typescript
 "let g:typescript_indent_disable = 1
 " -- React
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
