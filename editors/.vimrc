@@ -78,4 +78,12 @@ let g:javascript_plugin_jsdoc = 1 " Enable syntax highlighting for JSDoc
 " Typescript
 "let g:typescript_indent_disable = 1
 " -- React
-
+" Python
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
